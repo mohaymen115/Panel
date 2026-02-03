@@ -156,13 +156,13 @@ DASHBOARD_HTML = """
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard - SELVA ⚡</title>
 <style>
-body {{ font-family: Arial, sans-serif; background-color: #111; color: #fff; padding: 20px; }}
-a {{ color: #1E90FF; text-decoration: none; margin-right: 10px; }}
-a:hover {{ text-decoration: underline; }}
-input, button {{ padding: 8px; margin: 5px 0; border-radius: 6px; border: none; }}
-button {{ cursor: pointer; background-color: #1E90FF; color: #fff; }}
-button:hover {{ background-color: #00BFFF; }}
-h2 {{ text-shadow: 0 0 10px #FFD700; }}
+body { font-family: Arial, sans-serif; background-color: #111; color: #fff; padding: 20px; }
+a { color: #1E90FF; text-decoration: none; margin-right: 10px; }
+a:hover { text-decoration: underline; }
+input, button { padding: 8px; margin: 5px 0; border-radius: 6px; border: none; }
+button { cursor: pointer; background-color: #1E90FF; color: #fff; }
+button:hover { background-color: #00BFFF; }
+h2 { text-shadow: 0 0 10px #FFD700; }
 </style>
 </head>
 <body>
@@ -188,11 +188,11 @@ h2 {{ text-shadow: 0 0 10px #FFD700; }}
 <ul>
 {% for f in files %}
 <li>
-{{f[1]}}
-<a href="/download/{{f[1]}}">⬇️ Download</a>
+{{ f[1] }}
 {% if admin %}
-<a href="/delete/{{f[0]}}">🗑️ Delete</a>
+ - <a href="/delete/{{ f[0] }}">🗑️ Delete</a>
 {% endif %}
+ - <a href="/download/{{ f[1] }}">⬇️ Download</a>
 </li>
 {% endfor %}
 </ul>
