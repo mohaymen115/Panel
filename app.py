@@ -25,8 +25,8 @@ app = Flask(__name__)
 #============================================
 
 PANEL_URL = "http://198.135.52.238"
-PANEL_USERNAME = "gagaywb66"
-PANEL_PASSWORD = "gagaywb66"
+PANEL_USERNAME = "selva"
+PANEL_PASSWORD = "selva123456"
 
 all_messages = []
 MAX_MESSAGES = 100
